@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reverse_sentences" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lt-HU-5Ne">
+                                <rect key="frame" x="75" y="179" width="255.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application will reverse your sentences.Please type your text below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOA-5c-20z">
+                                <rect key="frame" x="20" y="235" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVM-dg-Wbm">
+                                <rect key="frame" x="20" y="307" width="374" height="34"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qd-11-RGO">
+                                <rect key="frame" x="20" y="754" width="374" height="80"/>
+                                <color key="backgroundColor" red="0.66917576540000001" green="0.7685984052" blue="0.82575672860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MsP-rs-kEd"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reverse">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="reverseButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rvs-EO-06A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpQ-IU-OxT">
+                                <rect key="frame" x="27" y="393" width="367" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="Yd5-zY-1Lk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Lt-HU-5Ne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="49b-GZ-XJi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Lt-HU-5Ne" secondAttribute="trailing" constant="83.5" id="5MF-0W-kRe"/>
+                            <constraint firstItem="qpQ-IU-OxT" firstAttribute="top" secondItem="bVM-dg-Wbm" secondAttribute="bottom" constant="52" id="5ao-69-KRz"/>
+                            <constraint firstItem="0Lt-HU-5Ne" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="HMc-qg-bw0"/>
+                            <constraint firstItem="2qd-11-RGO" firstAttribute="leading" secondItem="bVM-dg-Wbm" secondAttribute="leading" id="IDV-ns-865"/>
+                            <constraint firstItem="bVM-dg-Wbm" firstAttribute="top" secondItem="0Lt-HU-5Ne" secondAttribute="bottom" constant="80" id="JFb-wj-RUU"/>
+                            <constraint firstItem="bVM-dg-Wbm" firstAttribute="trailing" secondItem="YOA-5c-20z" secondAttribute="trailing" id="KKv-iG-258"/>
+                            <constraint firstItem="YOA-5c-20z" firstAttribute="top" secondItem="0Lt-HU-5Ne" secondAttribute="bottom" constant="8" symbolic="YES" id="Mjm-UX-Jv5"/>
+                            <constraint firstItem="2qd-11-RGO" firstAttribute="trailing" secondItem="qpQ-IU-OxT" secondAttribute="trailing" id="N65-qd-Vb4"/>
+                            <constraint firstItem="bVM-dg-Wbm" firstAttribute="top" secondItem="0Lt-HU-5Ne" secondAttribute="bottom" constant="80" id="TAo-df-Xfs"/>
+                            <constraint firstItem="qpQ-IU-OxT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="Xu7-Y9-QAq"/>
+                            <constraint firstItem="bVM-dg-Wbm" firstAttribute="leading" secondItem="YOA-5c-20z" secondAttribute="leading" id="YMF-Nu-DsL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2qd-11-RGO" secondAttribute="bottom" constant="28" id="jV6-qU-H1O"/>
+                            <constraint firstItem="YOA-5c-20z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kWa-81-r3u"/>
+                            <constraint firstItem="2qd-11-RGO" firstAttribute="trailing" secondItem="bVM-dg-Wbm" secondAttribute="trailing" id="olh-X8-Rlw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YOA-5c-20z" secondAttribute="trailing" constant="20" id="zsi-ua-aFD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="qpQ-IU-OxT" id="lKq-Vd-bW4"/>
+                        <outlet property="reverseButton" destination="2qd-11-RGO" id="jx3-4t-HLr"/>
+                        <outlet property="reverseField" destination="bVM-dg-Wbm" id="aNz-gV-3Re"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
